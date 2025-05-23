@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Carter" Version="8.2.1" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
     <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="9.0.5" />     <!--Don't remove. We don't use this package directly, but only remove when Carter nested dependency to System.Text.Json 8.0.0 which has vulnerabilities is resolved.-->
   </ItemGroup>
