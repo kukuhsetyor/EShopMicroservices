@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
     <PackageReference Include="Carter" Version="8.2.1" />
     <PackageReference Include="Marten" Version="7.40.4" />
     <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="9.0.5" />     <!--Don't remove. We don't use this package directly, but Carter 8.2.1 has a nested dependency to System.Text.Json 8.0.0 which is vulnerable.-->
