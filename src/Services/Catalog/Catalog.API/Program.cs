@@ -18,6 +18,8 @@ builder.Services.AddCarter();
 builder.Services.AddMarten(opts =>
 {
     opts.Connection(builder.Configuration.GetConnectionString("Database")!);
+    // Disable the absurdly verbose Npgsql logging
+    opts.DisableNpgsqlLogging = true;
 }).UseLightweightSessions();
 
 if (builder.Environment.IsDevelopment())
